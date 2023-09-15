@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SinglePage Landing Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1><span>C</span>ycle</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Product</a></li>
+                    <li><a href="">Gallery</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="left-section">
+            <h1><span>Hero</span> Road bike <br>Cycling <b>is</b> best<br> for your <span>health</span></h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever since the 1500s, when an unknown printer
+                took a galley of type and scrambled it to make a type specimen
+                book</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="right-section">
+            <svg id="svg1" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <clipPath id="a">
+                        <path fill="currentColor"
+                            d="M768.5 689.5Q719 879 534 820T256 630.5q-93-130.5-13.5-285T515 165q193-26 248 154.5t5.5 370Z" />
+                    </clipPath>
+                </defs>
+                <g clip-path="url(#a)">
+                    <path fill="#444cf7"
+                        d="M768.5 689.5Q719 879 534 820T256 630.5q-93-130.5-13.5-285T515 165q193-26 248 154.5t5.5 370Z" />
+                </g>
+            </svg>
+            <div class="cycleImg">
+                <img src="1.png" alt="" id="Main-Img">
+            </div>
+        </div>
+        <div class="list">
+            <ul class="listImg">
+                <li ><img src="1.png" alt="" class="listI"></li>
+                <li ><img src="4.png" alt="" class="listI"></li>
+                <li ><img src="5.png" alt="" class="listI"></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        
+
+       
+        var Images = document.querySelectorAll('.listI')
+        Images.forEach((img)=>{
+            img.addEventListener('click',function(){
+               document.getElementById('Main-Img').src = this.src
+            })
+         })
+    </script>
+</body>
+
+</html>
